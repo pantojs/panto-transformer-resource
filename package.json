@@ -1,0 +1,33 @@
+{
+  "name": "panto-transformer-resource",
+  "version": "0.1.0",
+  "description": "Resource transformer for panto",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint index.js && mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pantojs/panto-transformer-resource.git"
+  },
+  "keywords": [
+    "panto",
+    "resource",
+    "transformer"
+  ],
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "author": "yanni4night@gmail.com",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/pantojs/panto-transformer-resource/issues"
+  },
+  "homepage": "https://github.com/pantojs/panto-transformer-resource",
+  "dependencies": {
+    "panto-transformer": "^0.2.1"
+  },
+  "devDependencies": {
+    "panto": "0.0.25"
+  }
+}
