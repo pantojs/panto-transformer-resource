@@ -16,8 +16,6 @@ panto.pick('**/*.html').read().resource({
 ## options
  - getResourceAlias: function
 
-## options
-
 [npm-url]: https://npmjs.org/package/panto-transformer-resource
 [downloads-image]: http://img.shields.io/npm/dm/panto-transformer-resource.svg
 [npm-image]: http://img.shields.io/npm/v/panto-transformer-resource.svg
