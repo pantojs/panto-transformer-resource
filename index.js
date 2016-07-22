@@ -6,7 +6,7 @@
   * 2016-07-22[18:05:16]:revised
   *
   * @author yanni4night@gmail.com
-  * @version 0.1.0
+  * @version 0.1.1
   * @since 0.1.0
   */
 
@@ -70,7 +70,7 @@ class ResourceTransformer extends Transformer {
                 return url;
             }
             panto.reportDependencies(filename, resname);
-            aliasName = getResourceAlias(resname);
+            aliasName = getResourceAlias(resname, filename);
 
             if (!aliasName) {
                 return url;

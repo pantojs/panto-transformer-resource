@@ -1,6 +1,6 @@
 {
   "name": "panto-transformer-resource",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Resource transformer for panto",
   "main": "index.js",
   "scripts": {
@@ -28,6 +28,6 @@
     "panto-transformer": "^0.2.1"
   },
   "devDependencies": {
-    "panto": "0.0.25"
+    "panto": "0.0.26"
   }
 }
