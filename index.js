@@ -6,7 +6,7 @@
   * 2016-07-22[18:05:16]:revised
   *
   * @author yanni4night@gmail.com
-  * @version 0.1.1
+  * @version 0.1.2
   * @since 0.1.0
   */
 
@@ -99,7 +99,7 @@ class ResourceTransformer extends Transformer {
                 }
             }
 
-            resolve(panto.util.extend(file, {
+            resolve(panto._.extend(file, {
                 content
             }));
 

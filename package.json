@@ -1,11 +1,13 @@
 {
   "name": "panto-transformer-resource",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Resource transformer for panto",
   "main": "index.js",
   "scripts": {
-    "test": "eslint index.js && mocha"
+    "test": "eslint index.js && ./node_modules/.bin/mocha",
+    "coveralls": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
+  "pre-commit": "test",
   "repository": {
     "type": "git",
     "url": "https://github.com/pantojs/panto-transformer-resource.git"
@@ -25,9 +27,13 @@
   },
   "homepage": "https://github.com/pantojs/panto-transformer-resource",
   "dependencies": {
-    "panto-transformer": "^0.2.1"
+    "panto-transformer": "^0.2.4"
   },
   "devDependencies": {
-    "panto": "0.0.26"
+    "coveralls": "^2.11.12",
+    "mocha": "^2.5.3",
+    "mocha-lcov-reporter": "^1.2.0",
+    "panto": "0.0.30",
+    "pre-commit": "^1.1.3"
   }
 }
