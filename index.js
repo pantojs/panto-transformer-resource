@@ -4,9 +4,10 @@
   *
   * changelog
   * 2016-07-22[18:05:16]:revised
+  * 2016-08-19[11:05:31]:support alias name with queries
   *
   * @author yanni4night@gmail.com
-  * @version 0.1.2
+  * @version 0.1.3
   * @since 0.1.0
   */
 
@@ -54,9 +55,6 @@ class ResourceTransformer extends Transformer {
 
             var parsedUrl = sysurl.parse(url, true);
 
-            //search is used instead of query when formatting
-            delete parsedUrl.search;
-
             if (parsedUrl.protocol || /^(?:#|\/\/)/i.test(url)) {
                 //we ignore illegal urls or urls with protocol
                 //we see '//' as a dynamic protocol
@@ -76,9 +74,13 @@ class ResourceTransformer extends Transformer {
                 return url;
             }
 
-            parsedUrl.pathname = aliasName;
+            const parsedAliasName = sysurl.parse(aliasName, true);
 
-            return sysurl.format(parsedUrl);
+            panto._.extend(parsedAliasName.query, parsedUrl.query);
+
+            delete parsedAliasName.search;
+
+            return sysurl.format(parsedAliasName);
 
         };
 

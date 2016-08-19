@@ -23,7 +23,7 @@ panto.pick('**/*.html').read().resource({
 [travis-image]: http://img.shields.io/travis/pantojs/panto-transformer-resource.svg
 [david-dm-url]:https://david-dm.org/pantojs/panto-transformer-resource
 [david-dm-image]:https://david-dm.org/pantojs/panto-transformer-resource.svg
-[david-dm-dev-url]:https://david-dm.org/pantojs/panto-transformer-resource#info=devDependencies
+[david-dm-dev-url]:https://david-dm.org/pantojs/panto-transformer-resource#type=dev
 [david-dm-dev-image]:https://david-dm.org/pantojs/panto-transformer-resource/dev-status.svg
 [coveralls-image]:https://coveralls.io/repos/github/pantojs/panto-transformer-resource/badge.svg?branch=master
 [coveralls-url]:https://coveralls.io/github/pantojs/panto-transformer-resource?branch=master
